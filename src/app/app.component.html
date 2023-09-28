@@ -5,7 +5,7 @@
     <div class="container mt-5 ">
       <app-eratetypes></app-eratetypes>
       <div class="card">
-        <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+        <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }" [paginator]="true" [rows]="5"  [showCurrentPageReport]="true">
             <ng-template pTemplate="header">
                 <tr>
                     <th>Code</th>
